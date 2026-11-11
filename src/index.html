@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:">
+<title>Addon Maker for MCPE</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><b>⛏ Addon Maker</b><span id="pname"></span>
+  <div class="sp"></div>
+  <button id="bOpen">Открыть</button><button id="bSave">Сохранить</button><button id="bExport" class="primary">Экспорт .mcaddon</button></header>
+<div id="app">
+  <nav id="tabs"></nav>
+  <main id="view"></main>
+</div>
+<footer id="status">Готово</footer>
+<script src="../node_modules/three/build/three.min.js"></script>
+<script src="viewport.js"></script>
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,26 @@
+{
+  "name": "addon-maker-for-mcpe",
+  "version": "0.1.0",
+  "description": "Minecraft Bedrock Add-on Maker",
+  "main": "main.js",
+  "author": "addon-maker",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable --x64"
+  },
+  "dependencies": {
+    "adm-zip": "0.5.10",
+    "three": "0.147.0"
+  },
+  "devDependencies": {
+    "electron": "22.3.27",
+    "electron-builder": "23.6.0"
+  },
+  "build": {
+    "appId": "com.addonmaker.mcpe",
+    "productName": "AddonMaker",
+    "files": ["main.js", "preload.js", "exporter.js", "src/**/*"],
+    "win": { "target": ["portable"] },
+    "portable": { "artifactName": "AddonMaker-${version}.exe" }
+  }
+}
